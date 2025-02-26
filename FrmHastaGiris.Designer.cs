@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaGiris));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -90,6 +91,7 @@
             this.LnkUyeOl.TabIndex = 5;
             this.LnkUyeOl.TabStop = true;
             this.LnkUyeOl.Text = "Üye Ol";
+            this.LnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LnkUyeOl_LinkClicked);
             // 
             // BtnGirisYap
             // 
@@ -102,10 +104,11 @@
             // 
             // FrmHastaGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(456, 299);
+            this.ClientSize = new System.Drawing.Size(456, 286);
             this.Controls.Add(this.BtnGirisYap);
             this.Controls.Add(this.LnkUyeOl);
             this.Controls.Add(this.TxtSifre);
@@ -114,9 +117,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHastaGiris";
-            this.Text = "FrmHastaGiris";
+            this.Text = "Hasta Giriş Ekranı";
             this.ResumeLayout(false);
             this.PerformLayout();
 
