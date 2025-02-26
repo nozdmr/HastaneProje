@@ -41,7 +41,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnDuyurular = new System.Windows.Forms.Button();
-            this.BtnInternet = new System.Windows.Forms.Button();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -149,7 +148,6 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.BtnCikis);
-            this.groupBox4.Controls.Add(this.BtnInternet);
             this.groupBox4.Controls.Add(this.BtnDuyurular);
             this.groupBox4.Controls.Add(this.BtnGuncelle);
             this.groupBox4.Location = new System.Drawing.Point(12, 547);
@@ -178,20 +176,11 @@
             this.BtnDuyurular.Text = "Duyurular";
             this.BtnDuyurular.UseVisualStyleBackColor = true;
             // 
-            // BtnInternet
-            // 
-            this.BtnInternet.Location = new System.Drawing.Point(10, 93);
-            this.BtnInternet.Name = "BtnInternet";
-            this.BtnInternet.Size = new System.Drawing.Size(122, 44);
-            this.BtnInternet.TabIndex = 2;
-            this.BtnInternet.Text = "İnternet";
-            this.BtnInternet.UseVisualStyleBackColor = true;
-            // 
             // BtnCikis
             // 
-            this.BtnCikis.Location = new System.Drawing.Point(138, 93);
+            this.BtnCikis.Location = new System.Drawing.Point(10, 93);
             this.BtnCikis.Name = "BtnCikis";
-            this.BtnCikis.Size = new System.Drawing.Size(115, 44);
+            this.BtnCikis.Size = new System.Drawing.Size(243, 44);
             this.BtnCikis.TabIndex = 3;
             this.BtnCikis.Text = "Çıkış";
             this.BtnCikis.UseVisualStyleBackColor = true;
@@ -236,7 +225,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnCikis;
-        private System.Windows.Forms.Button BtnInternet;
         private System.Windows.Forms.Button BtnDuyurular;
     }
 }
