@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HastaneProje
 {
-    public partial class SekreterDetay : Form
+    public partial class FrmSekreterDetay : Form
     {
-        public SekreterDetay()
+        public FrmSekreterDetay()
         {
             InitializeComponent();
         }
