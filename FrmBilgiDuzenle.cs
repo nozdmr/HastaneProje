@@ -16,5 +16,11 @@ namespace HastaneProje
         {
             InitializeComponent();
         }
+
+        public string tcno;
+        private void FrmBilgiDuzenle_Load(object sender, EventArgs e)
+        {
+            MskTC.Text = tcno;
+        }
     }
 }

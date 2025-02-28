@@ -69,7 +69,7 @@
             this.CmbCinsiyet.Location = new System.Drawing.Point(202, 288);
             this.CmbCinsiyet.Name = "CmbCinsiyet";
             this.CmbCinsiyet.Size = new System.Drawing.Size(184, 31);
-            this.CmbCinsiyet.TabIndex = 31;
+            this.CmbCinsiyet.TabIndex = 6;
             // 
             // label4
             // 
@@ -95,14 +95,14 @@
             this.MskTelefon.Mask = "(999) 000-0000";
             this.MskTelefon.Name = "MskTelefon";
             this.MskTelefon.Size = new System.Drawing.Size(184, 31);
-            this.MskTelefon.TabIndex = 28;
+            this.MskTelefon.TabIndex = 4;
             // 
             // TxtAd
             // 
             this.TxtAd.Location = new System.Drawing.Point(202, 30);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(184, 31);
-            this.TxtAd.TabIndex = 27;
+            this.TxtAd.TabIndex = 1;
             // 
             // label5
             // 
@@ -118,7 +118,7 @@
             this.TxtSoyad.Location = new System.Drawing.Point(202, 72);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(184, 31);
-            this.TxtSoyad.TabIndex = 25;
+            this.TxtSoyad.TabIndex = 2;
             // 
             // label1
             // 
@@ -135,7 +135,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(184, 31);
-            this.MskTC.TabIndex = 23;
+            this.MskTC.TabIndex = 3;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -158,6 +158,7 @@
             // 
             // FrmBilgiDuzenle
             // 
+            this.AcceptButton = this.BtnBilgiGuncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
@@ -176,9 +177,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmBilgiDuzenle";
             this.Text = "FrmBilgiDuzenle";
+            this.Load += new System.EventHandler(this.FrmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
