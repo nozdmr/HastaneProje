@@ -114,5 +114,22 @@ namespace HastaneProje
             bgl.Baglanti().Close();
             MessageBox.Show("Duyuru Oluşturuldu");
         }
+
+        private void BtnDoktorPanel_Click(object sender, EventArgs e)
+        {
+            FrmDoktorPaneli fr = new FrmDoktorPaneli();
+            fr.Show();
+        }
+
+        private void BtnBransPanel_Click(object sender, EventArgs e)
+        {
+            FrmBrans fr = new FrmBrans();
+            fr.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
