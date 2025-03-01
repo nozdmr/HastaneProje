@@ -20,6 +20,7 @@ namespace HastaneProje
 
         public string tcno;
         SqlBaglantisi bgl = new SqlBaglantisi();
+        public string randevuid;
 
         private void label8_Click(object sender, EventArgs e)
         {
@@ -38,6 +39,8 @@ namespace HastaneProje
 
         private void FrmSekreterDetay_Load(object sender, EventArgs e)
         {
+
+            Txtid.Text = randevuid;
             LblTC.Text = tcno;
             // Ad-Soyad
             SqlCommand komut = new SqlCommand("Select SekreterAdSoyad From Tbl_Sekreter Where SekreterTC=@p1", bgl.Baglanti());
@@ -130,6 +133,18 @@ namespace HastaneProje
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void BtnListe_Click(object sender, EventArgs e)
+        {
+            FrmRandevuListesi fr = new FrmRandevuListesi();
+            fr.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr = new FrmDuyurular();
+            fr.Show();
         }
     }
 }

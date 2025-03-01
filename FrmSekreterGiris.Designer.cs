@@ -109,6 +109,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterGiris";
             this.Text = "Sekreter Giriş";
+            this.Load += new System.EventHandler(this.FrmSekreterGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

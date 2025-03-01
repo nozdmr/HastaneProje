@@ -38,6 +38,7 @@ namespace HastaneProje
                 "Values (@p1)", bgl.Baglanti());
             komut.Parameters.AddWithValue("@p1", TxtBrans.Text);
             komut.ExecuteNonQuery();
+            bgl.Baglanti().Close();
             MessageBox.Show("Branş Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
@@ -47,6 +48,27 @@ namespace HastaneProje
             int secilendeger = dataGridView1.SelectedCells[0].RowIndex;
             Txtid.Text = dataGridView1.Rows[secilendeger].Cells[0].Value.ToString();
             TxtBrans.Text = dataGridView1.Rows[secilendeger].Cells[1].Value.ToString();
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Delete From Tbl_Branslar WHERE Bransid=@p1 ", bgl.Baglanti());
+            komut.Parameters.AddWithValue("@p1", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.Baglanti().Close();
+            MessageBox.Show("Seçilen Branş Silindi", "Branş Silindi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("UPDATE Tbl_Branslar SET BransAd = @p1 WHERE Bransid=@p2", bgl.Baglanti());
+            komut.Parameters.AddWithValue("@p1", TxtBrans.Text);
+            komut.Parameters.AddWithValue("@p2", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.Baglanti().Close();
+            MessageBox.Show("Branş Bilgisi Güncellendi", "Branş Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
         }
     }
 }
