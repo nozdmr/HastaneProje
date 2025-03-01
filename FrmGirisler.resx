@@ -121,7 +121,7 @@
   <data name="BtnHastaGiris.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAG9/SURBVHhe7b0H
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAG9/SURBVHhe7b0H
         fBzHef4PUu5yj+MS27EKcSBNy7Ej24lrZMeO7fjnOP8kluQmy3KRm0TJ6rIlURIl9ip2SqJE8u4AsPcK
         gBXsBexg7yQIsJOot/v+Z8CBdFy8AHZv++7z5PP9yJHI273dd+Z5bmZ2Ng+CIHOinnlvaRqa9zVtYN4T
         mUF5k7UBnbZl+nc6nRnQ6VKmX6f6pn6dmgR6U59O5Bt9xfH7dco0yXMa0uloZnincm1M53E0Ju8hwQ/o
@@ -603,7 +603,7 @@
   <data name="BtnDoktorGirisi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH7cSURBVHhe7b0H
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAH7cSURBVHhe7b0H
         eBRHmv+/3nR3ezmHvbu9HH77v9u73dtbA7bBXq+9Xt96bS8CGxsbJJIkMNFgMAYkRM4555xzMJionMNM
         z0iakQSIjMjBgCT3v99RDYxa7+Senu6Z7+d5Ps/emamZUVd1vTXVVW99DQBgEsaN+/pP3h7w188lpDzX
         rkvKux0SUvq375wytn2X1LkdElI3tE9IPtw+IaVYsUbxguIND28qysIm8d8aFOm1DsUixULFI4qblfda

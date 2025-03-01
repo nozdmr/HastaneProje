@@ -31,11 +31,13 @@ namespace HastaneProje
         
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            /*
            int secilen = dataGridView1.SelectedCells[0].RowIndex;
            string rndid = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
             FrmSekreterDetay fr = new FrmSekreterDetay();
             fr.randevuid = rndid;
             fr.Show();
+            */
         }
     }
 }
