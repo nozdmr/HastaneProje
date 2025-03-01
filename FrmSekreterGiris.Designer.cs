@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSekreterGiris));
             this.BtnGirisYap = new System.Windows.Forms.Button();
-            this.LnkUyeOl = new System.Windows.Forms.LinkLabel();
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,16 +45,7 @@
             this.BtnGirisYap.TabIndex = 13;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
-            // 
-            // LnkUyeOl
-            // 
-            this.LnkUyeOl.AutoSize = true;
-            this.LnkUyeOl.Location = new System.Drawing.Point(403, 182);
-            this.LnkUyeOl.Name = "LnkUyeOl";
-            this.LnkUyeOl.Size = new System.Drawing.Size(62, 23);
-            this.LnkUyeOl.TabIndex = 12;
-            this.LnkUyeOl.TabStop = true;
-            this.LnkUyeOl.Text = "Üye Ol";
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // TxtSifre
             // 
@@ -102,21 +93,22 @@
             // 
             // FrmSekreterGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(517, 320);
             this.Controls.Add(this.BtnGirisYap);
-            this.Controls.Add(this.LnkUyeOl);
             this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.MskTC);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterGiris";
-            this.Text = "FrmSekreter";
+            this.Text = "Sekreter Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,7 +117,6 @@
         #endregion
 
         private System.Windows.Forms.Button BtnGirisYap;
-        private System.Windows.Forms.LinkLabel LnkUyeOl;
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.Label label3;

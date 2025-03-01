@@ -44,5 +44,10 @@ namespace HastaneProje
             }
             bgl.Baglanti().Close();
         }
+
+        private void FrmHastaGiris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

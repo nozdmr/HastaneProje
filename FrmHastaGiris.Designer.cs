@@ -122,6 +122,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmHastaGiris";
             this.Text = "Hasta Giriş Ekranı";
+            this.Load += new System.EventHandler(this.FrmHastaGiris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
